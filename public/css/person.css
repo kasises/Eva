@@ -1,0 +1,44 @@
+  /* 设置框架的大小为1283px * 192px，且居中对齐 */
+  .fixed-frame {
+    width: 1283px;
+    height: 192px;
+    background-image: url("../img/YoursName.webp") !important; /* 背景图 */
+    background-size: cover; /* 覆盖整个框架 */
+    background-position: center; /* 居中显示背景图片 */
+    margin: 0 auto; /* 水平居中 */
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px; /* 调整圆形的位置 */
+}
+
+/*圆形样式 */
+ .profile-circle {
+    width: 80px; /* 圆的直径 */
+    height: 80px;
+    background-color: grey;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+ }
+
+ /* 隐藏的文字 */
+ .profile-circle span {
+     color: white;
+     font-size: 14px;
+     display: none;
+ }
+
+ /* 悬停显示文字 */
+ .profile-circle:hover span {
+     display: block;
+ }
+
+ /* 隐藏文件选择器 */
+ .file-input {
+    display: none;
+}

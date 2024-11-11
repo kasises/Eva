@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/person.css">
+    <script type="text/javascript" src="./js/person.js"></script>
+</head>
+<div class="fixed-frame">
+    <!-- 左侧的圆形头像框 -->
+    <div class="profile-circle" onclick="document.getElementById('fileInput').click();">
+        <span>更换头像</span>
+    </div>
+    
+    <!-- 隐藏的文件选择器 -->
+    <input type="file" id="fileInput" class="file-input" accept="image/*" onchange="handleFileChange(event)">
+</div>
+
+</body>
+</html>
